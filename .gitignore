@@ -3,3 +3,4 @@ weechat/logs
 weechat/weechat.log
 mutt/header_cache
 mutt/conf/mailboxes.muttrc
+mutt/conf/tilda.password
