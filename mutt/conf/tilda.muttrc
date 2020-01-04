@@ -1,8 +1,8 @@
 source ~/.mutt/conf/tilda.password
 
-set from = "meka@tilda.center"
-set realname = "Goran Mekić"
-set imap_user = "meka@tilda.center"
+set from = "krle@tilda.center"
+set realname = "Krstan Vjestica"
+set imap_user = "krle@tilda.center"
 set smtp_url = smtp://$imap_user:$imap_pass@mail.tilda.center:587
 set spoolfile = "+tilda/INBOX"
 set record = "+tilda/Sent"

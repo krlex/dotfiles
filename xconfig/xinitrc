@@ -1,4 +1,4 @@
-#!/bin/sh
+!/bin/sh
 
 export BROWSER=~/bin/browser.sh
 export EDITOR=~/bin/editor.sh
@@ -24,11 +24,14 @@ xautolock -time 10 -locker ~/bin/slock.sh &
 quiterrs &
 ~/bin/mail.sh &
 offlineimap &
-quiterss &
 (sleep 2 && xsetroot) &
 gajim &
-skypeforlinux &
+# skypeforlinux &
 /usr/sbin/mouseserver &
+/opt/viber/Viber &
 cat /dev/umidi0.0 >/dev/umidi1.0 &
+
+# ServeoNet
+#  ssh -R krletron.xyz:22:localhost:22 serveo.net
 
 exec i3
