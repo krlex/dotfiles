@@ -31,7 +31,5 @@ gajim &
 /opt/viber/Viber &
 cat /dev/umidi0.0 >/dev/umidi1.0 &
 
-# ServeoNet
-#  ssh -R krletron.xyz:22:localhost:22 serveo.net
-
+~/Files/server-ssh.sh &
 exec i3
