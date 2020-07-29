@@ -5,4 +5,5 @@ weechat/irc.conf
 mutt/header_cache
 mutt/conf/mailboxes.muttrc
 mutt/conf/tilda.password
+64bit/
 
