@@ -10,6 +10,7 @@ eval $(ssh-agent)
 
 # Start audio before the apps
 mixer pcm 100 vol 100
+mixer -f /dev/mixer9 vol 100 pcm 100 mic 100
 
 # Keyboard setup
 xset r rate 180 30
@@ -18,7 +19,7 @@ xrdb ~/.Xdefaults
 xmodmap ~/.xmodmap
 
 # Apps
-urxvt -name weechat -e ~/bin/weechat.sh &
+#urxvt -name weechat -e ~/bin/weechat.sh &
 keepassxc &
 unclutter &
 xautolock -time 10 -locker ~/bin/slock.sh &
@@ -28,7 +29,7 @@ offlineimap &
 (sleep 2 && xsetroot) &
 gajim &
 # skypeforlinux &
-/usr/sbin/mouseserver &
+#/usr/sbin/mouseserver &
 /opt/viber/Viber &
 cat /dev/umidi0.0 >/dev/umidi1.0 &
 ~/Files/server-ssh.sh &
