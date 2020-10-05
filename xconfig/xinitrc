@@ -11,6 +11,9 @@ eval $(ssh-agent)
 # Start audio before the apps
 mixer pcm 100 vol 100
 mixer -f /dev/mixer9 vol 100 pcm 100 mic 100
+# Display
+xrandr --output default --primary --mode 1024x768 --pos 0x0 --rotate normal
+
 
 # Keyboard setup
 xset r rate 180 30
@@ -32,6 +35,6 @@ gajim &
 #/usr/sbin/mouseserver &
 /opt/viber/Viber &
 cat /dev/umidi0.0 >/dev/umidi1.0 &
-~/Files/server-ssh.sh &
+#~/Files/server-ssh.sh &
 
 exec i3
