@@ -1,4 +1,4 @@
-!/bin/sh
+#!/bin/sh
 
 export PY_VERSION=3.7
 export BROWSER=~/bin/browser.sh
@@ -12,7 +12,8 @@ eval $(ssh-agent)
 mixer pcm 100 vol 100
 mixer -f /dev/mixer9 vol 100 pcm 100 mic 100
 # Display
-xrandr --output default --primary --mode 1024x768 --pos 0x0 --rotate normal
+#xrandr --output default --primary --mode 1024x768 --pos 0x0 --rotate normal
+#xrandr --output DisplayPort-0 --off --output DVI-D-0 --mode 1680x1050 --pos 0x0 --rotate normal --output HDMI-A-0 --mode 1680x1050 --pos 1680x0 --rotate normal
 
 
 # Keyboard setup
@@ -30,7 +31,7 @@ quiterrs &
 ~/bin/mail.sh &
 offlineimap &
 (sleep 2 && xsetroot) &
-gajim &
+#gajim &
 # skypeforlinux &
 #/usr/sbin/mouseserver &
 /opt/viber/Viber &
