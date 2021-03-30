@@ -67,3 +67,24 @@
 
 [[layers]]
   name = "foldsearch"
+
+[[layers]]
+  name = "lang#go"
+
+[[layers]]
+  name = "lang#dockerfile"
+
+[[layers]]
+  name = "git"
+
+[[layers]]
+  name = "github"
+
+[[layers]]
+  name = "format"
+  format_on_save = true
+
+[[layers]]
+  name = "lang#toml"
+
+
