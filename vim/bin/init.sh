@@ -2,9 +2,11 @@
 
 VIM_ROOT_DIR="$(readlink -f $(dirname $0)/..)"
 
+curl https://spacevim.org/install.sh -o /tmp/spacevim-install.sh
+chmod +x /tmp/spacevim-install.sh
+/tmp/spacevim-install.sh
+rm /tmp/spacevim-install.sh
+
 cd
-rm -rf .spacevim
-ln -s "${VIM_ROOT_DIR}/spacevim" ~/.spacevim
-git clone https://github.com/liuchengxu/space-vim .space-vim
-cd .space-vim
-make neovim
+rm -rf .SpaceVim.d
+ln -sf "${VIM_ROOT_DIR}" .SpaceVim.d
