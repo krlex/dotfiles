@@ -1,6 +1,5 @@
 #!/bin/sh
 
-export PY_VERSION=3.7
 export BROWSER=~/bin/browser.sh
 export EDITOR=~/bin/editor.sh
 export PATH="${HOME}/bin:${PATH}"
