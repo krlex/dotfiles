@@ -5,4 +5,4 @@
 # and add  
 # coretemp_load="YES" >> /boot/loader.conf
 
- sudo sysctl -a | grep temperature
+sysctl -a | grep temperature

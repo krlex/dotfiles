@@ -30,10 +30,10 @@ quiterrs &
 ~/bin/mail.sh &
 offlineimap &
 (sleep 2 && xsetroot) &
-#gajim &
+gajim &
 # skypeforlinux &
-/usr/sbin/mouseserver &
-/opt/viber/Viber &
+#/usr/sbin/mouseserver &
+#/opt/viber/Viber &
 cat /dev/umidi0.0 >/dev/umidi1.0 &
 #~/Files/server-ssh.sh &
 
