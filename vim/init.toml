@@ -56,8 +56,8 @@
 [[layers]]
   name = 'lang#markdown'
 
-[[layers]]
-  name = 'lang#python'
+#[[layers]]
+#  name = 'lang#python'
 
 [[layers]]
   name = 'lang#sh'

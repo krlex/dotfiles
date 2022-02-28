@@ -6,11 +6,11 @@ calendar.holidays=full
 calendar.details=full
 color=on
 journal.time=on
-taskd.server=freecinc.com:53589
-taskd.key=\/home\/meka\/.task\/freecinc_265f3bba.key.pem
-taskd.certificate=\/home\/meka\/.task\/freecinc_265f3bba.cert.pem
-taskd.ca=\/home\/meka\/.task\/freecinc_265f3bba.ca.pem
-taskd.credentials=FreeCinc\/freecinc_265f3bba\/a2b3e64f-cc6b-4ce9-8d58-76e2ab9816d6
+taskd.server=tasks.tilda.center:5358
+taskd.key=\/home\/krle\/.task\/krle.key.pem
+taskd.certificate=\/home\/krle\/.task\/krle.cert.pem
+taskd.ca=\/home\/krle\/.task\/ca.cert.pem
+taskd.credentials=tilda\/Krstan Vjestica\/64fe2a4d-122c-11ec-81ca-7085c253a5e9
 default.project=home
 default.command=list
 
@@ -34,7 +34,13 @@ uda.githubtype.label=Github Type
 uda.githubmilestone.type=numeric
 uda.githubmilestone.label=Github Milestone
 # END Bugwarrior UDAs
-default.due=today
 
 report.list.columns=id,start.age,entry.age,depends.indicator,priority,project,tags,recur.indicator,scheduled.countdown,due.remaining,until.remaining,description.count,urgency
 report.long.sort=start-,due+,project+/,urgency-
+regex=on
+uda.reviewed.type=date
+uda.reviewed.label=Reviewed
+report._reviewed.description=Tasksh review report.  Adjust the filter to your needs.
+report._reviewed.columns=uuid
+report._reviewed.sort=reviewed+,modified+
+report._reviewed.filter=( reviewed.none: or reviewed.before:now-6days ) and ( +PENDING or +WAITING )

@@ -29,6 +29,7 @@ xautolock -time 10 -locker ~/bin/slock.sh &
 quiterrs &
 ~/bin/mail.sh &
 offlineimap &
+syncthing &
 (sleep 2 && xsetroot) &
 gajim &
 # skypeforlinux &
