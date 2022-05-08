@@ -10,7 +10,7 @@
 [fetch]
     prune = true
 [core]
-	editor = lvim
+	editor = nvim
 #[core]
 #	editor = vim
 [hub]
